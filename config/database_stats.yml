@@ -1,0 +1,8 @@
+default: &stat_default
+  adapter: sqlite3
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *stat_default
+  database: db_stats/development_stats.sqlite3
